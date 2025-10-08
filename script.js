@@ -144,7 +144,6 @@ function generateTimeSlots() {
 
             timeSlot.classList.add('selected');
             selectedTime = time;
-            confirmButton.disabled = false;
         });
 
         timeSlotsContainer.appendChild(timeSlot);
@@ -161,15 +160,8 @@ nextMonthBtn.addEventListener('click', () => {
     generateCalendar(currentDate);
 });
 
-confirmButton.addEventListener('click', () => {
-    if (selectedDate && selectedTime) {
-        const formattedDate = `${months[selectedDate.getMonth()]} ${selectedDate.getDate()}, ${selectedDate.getFullYear()}`;
-        alert(`Please call (760) 808-8113 to confirm your appointment for:\n\n${formattedDate} at ${selectedTime}\n\nWe look forward to seeing you!`);
-
-        // Optionally, open phone dialer
-        window.location.href = 'tel:7608088113';
-    }
-});
+// Confirm button now redirects to Setmore (handled by HTML link)
+// Keep track of selected time for visual feedback only
 
 // Initialize calendar
 generateCalendar(currentDate);

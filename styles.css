@@ -340,7 +340,74 @@ body {
     color: var(--light-gray);
     font-size: 1.2rem;
     margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+/* Setmore CTA Section */
+.setmore-cta {
+    text-align: center;
     margin-bottom: 50px;
+}
+
+.setmore-button {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: var(--gold);
+    color: var(--primary-black);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 3px solid var(--gold);
+    box-shadow: 0 5px 20px rgba(201, 169, 97, 0.4);
+}
+
+.setmore-button:hover {
+    background-color: transparent;
+    color: var(--gold);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.5);
+}
+
+.setmore-button i {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.setmore-note {
+    color: var(--light-gray);
+    font-size: 1rem;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.booking-divider {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.booking-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--medium-gray);
+}
+
+.booking-divider span {
+    background-color: var(--secondary-black);
+    padding: 0 20px;
+    color: var(--gold);
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
 }
 
 .booking-container {
@@ -476,6 +543,7 @@ body {
 }
 
 .confirm-button {
+    display: block;
     width: 100%;
     padding: 18px;
     background-color: var(--gold);
@@ -488,21 +556,36 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.confirm-button:hover:not(:disabled) {
+.confirm-button:hover {
     background-color: var(--light-gold);
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(201, 169, 97, 0.3);
 }
 
-.confirm-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
 .confirm-button i {
     margin-right: 10px;
+}
+
+.alt-booking {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--light-gray);
+    font-size: 0.95rem;
+}
+
+.alt-booking a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.alt-booking a:hover {
+    color: var(--light-gold);
 }
 
 /* Contact Section */
