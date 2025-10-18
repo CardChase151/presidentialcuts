@@ -36,7 +36,8 @@ export function AuthProvider({ children }) {
       }
 
       // Check if login type matches user type
-      if (isBarber && !users.is_barber) {
+      // Owners can login from either tab
+      if (isBarber && !users.is_barber && !users.is_owner) {
         throw new Error('Invalid barber credentials');
       }
 

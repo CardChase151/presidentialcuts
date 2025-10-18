@@ -16,64 +16,24 @@
 
 ## Step 2: Create Test Accounts
 
-### Owner Account
-Run this in Supabase SQL Editor (after hashing a password):
+**Easy Way:** Run the `CREATE_TEST_USERS.sql` script in Supabase SQL Editor:
 
-```sql
--- First hash your password using bcrypt (you can use an online tool)
--- For "password123", a bcrypt hash might look like:
--- $2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy
-
-INSERT INTO users (email, password_hash, name, phone, is_barber, is_owner)
-VALUES (
-  'owner@test.com',
-  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
-  'Shop Owner',
-  '7608088113',
-  false,
-  true
-);
+```bash
+# In Supabase SQL Editor, copy and run the entire CREATE_TEST_USERS.sql file
 ```
 
-### Barber Account
-```sql
--- Create barber user
-INSERT INTO users (email, password_hash, name, phone, is_barber, is_owner)
-VALUES (
-  'barber@test.com',
-  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
-  'John the Barber',
-  '7608088114',
-  true,
-  false
-)
-RETURNING id;
+This creates 4 test accounts:
+- **Owner:** owner@presidentialcuts.com / password123
+- **Barber:** nacho@presidentialcuts.com / password123
+- **Customer:** customer@test.com / password123
+- **Customer 2:** jane@test.com / password123
 
--- Note the ID returned above, use it in the next queries
--- Create barber profile (replace 'USER-ID-HERE' with the actual UUID)
-INSERT INTO barbers (user_id, bio, is_active)
-VALUES (
-  'USER-ID-HERE',
-  'Expert barber with 10+ years of experience',
-  true
-)
-RETURNING id;
+**Manual Way (if you need custom accounts):**
 
--- Link barber to all services (replace 'BARBER-ID-HERE' with the UUID from above)
-INSERT INTO barber_services (barber_id, service_id)
-SELECT 'BARBER-ID-HERE', id FROM services;
+The bcrypt hash for "password123" is:
+`$2b$10$bAEgoZgMECqF/nH.05oH2.2Z6Ov5e8myeFKucCqWkpW/9fRDK8O72`
 
--- Set weekly schedule (replace 'BARBER-ID-HERE')
--- 0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday
-INSERT INTO barber_schedules (barber_id, day_of_week, start_time, end_time)
-VALUES
-  ('BARBER-ID-HERE', 1, '07:00:00', '16:00:00'),
-  ('BARBER-ID-HERE', 2, '07:00:00', '16:00:00'),
-  ('BARBER-ID-HERE', 3, '07:00:00', '16:00:00'),
-  ('BARBER-ID-HERE', 4, '07:00:00', '16:00:00'),
-  ('BARBER-ID-HERE', 5, '07:00:00', '16:00:00'),
-  ('BARBER-ID-HERE', 6, '07:00:00', '16:00:00');
-```
+See `CREATE_TEST_USERS.sql` for full examples of creating users, barbers, schedules, etc.
 
 ## Step 3: Run the App
 
@@ -94,14 +54,18 @@ npm start
    - Login/Register as a customer
 
 ### Test Barber Login
-- Email: `barber@test.com`
+- Go to Login page and select the **"Barber"** tab
+- Email: `nacho@presidentialcuts.com`
 - Password: `password123`
 - You'll see your appointments and client information
 
 ### Test Owner Login
-- Email: `owner@test.com`
+- Go to Login page (can use either Customer or Barber tab)
+- Email: `owner@presidentialcuts.com`
 - Password: `password123`
 - You can manage barbers and view all appointments
+
+**Note:** Owners can login from either tab. The system will automatically detect they're an owner and redirect to the owner dashboard.
 
 ## Password Hashing Tool
 
