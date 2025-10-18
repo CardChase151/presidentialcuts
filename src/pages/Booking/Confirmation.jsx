@@ -91,6 +91,7 @@ function Confirmation() {
   return (
     <div className="booking-page">
       <div className="container">
+        <div className="progress-indicator">Step 5 of 5</div>
         <h1 className="page-title">Confirm Your Appointment</h1>
 
         <div className="confirmation-content">
@@ -178,7 +179,7 @@ function Confirmation() {
           {error && <div className="error-message">{error}</div>}
 
           <div className="confirmation-actions">
-            <button onClick={() => navigate('/book/datetime')} className="back-button">
+            <button onClick={() => navigate('/book/time')} className="back-button">
               Back
             </button>
             <button

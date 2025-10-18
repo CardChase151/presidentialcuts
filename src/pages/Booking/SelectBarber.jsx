@@ -37,7 +37,7 @@ function SelectBarber() {
 
   const handleSelectBarber = (barber) => {
     setSelectedBarber(barber);
-    navigate('/book/datetime');
+    navigate('/book/service');
   };
 
   if (loading) {
@@ -53,6 +53,7 @@ function SelectBarber() {
   return (
     <div className="booking-page">
       <div className="container">
+        <div className="progress-indicator">Step 1 of 5</div>
         <h1 className="page-title">Select Your Barber</h1>
         <p className="page-subtitle">Choose from our team of skilled professionals</p>
 

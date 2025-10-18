@@ -1,0 +1,140 @@
+.progress-indicator {
+  text-align: center;
+  color: #c9a961;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.calendar-section.centered {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #c9a961;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.calendar-header button:hover {
+  color: #d4b76f;
+}
+
+.calendar-header h3 {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.day-header {
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.calendar-day.empty {
+  cursor: default;
+}
+
+.calendar-day:not(.empty):not(.past):hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.calendar-day.past {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.calendar-day.today {
+  border: 2px solid #c9a961;
+}
+
+.calendar-day.selected {
+  background: #c9a961;
+  color: #fff;
+  transform: scale(1.15);
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.back-button,
+.continue-button {
+  flex: 1;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-button {
+  background: #f0f0f0;
+  border: 2px solid #e0e0e0;
+  color: #1a1a1a;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
+}
+
+.continue-button {
+  background: #c9a961;
+  border: none;
+  color: #1a1a1a;
+}
+
+.continue-button:hover:not(:disabled) {
+  background: #d4b76f;
+  transform: translateY(-2px);
+}
+
+.continue-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

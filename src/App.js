@@ -5,7 +5,9 @@ import { BookingProvider } from './context/BookingContext';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home';
 import SelectBarber from './pages/Booking/SelectBarber';
-import SelectDateTime from './pages/Booking/SelectDateTime';
+import SelectService from './pages/Booking/SelectService';
+import SelectDate from './pages/Booking/SelectDate';
+import SelectTime from './pages/Booking/SelectTime';
 import Confirmation from './pages/Booking/Confirmation';
 import Login from './pages/Login';
 import ClientDashboard from './pages/Dashboard/ClientDashboard';
@@ -22,7 +24,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/book" element={<SelectBarber />} />
-              <Route path="/book/datetime" element={<SelectDateTime />} />
+              <Route path="/book/service" element={<SelectService />} />
+              <Route path="/book/date" element={<SelectDate />} />
+              <Route path="/book/time" element={<SelectTime />} />
               <Route path="/book/confirmation" element={<Confirmation />} />
               <Route path="/login" element={<Login />} />
               <Route path="/dashboard/client" element={<ClientDashboard />} />
