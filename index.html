@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Cuts - Premium Barbershop | Rancho Mirage, CA</title>
+    <meta name="description" content="Presidential Cuts - Premium men's haircuts, precision fades, and beard grooming in Rancho Mirage. Book your appointment today.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="logo.png" alt="Presidential Cuts Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#booking" class="nav-link">Book Now</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="Presidential Cuts" class="hero-logo">
+            <h1>PRESIDENTIAL CUTS</h1>
+            <p class="hero-subtitle">Premium Barbershop Experience in Rancho Mirage</p>
+            <a href="#booking" class="cta-button">Book Your Appointment</a>
+            <div class="social-links">
+                <a href="https://www.facebook.com/p/Presidential-Cuts-61556301353853/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/presidentialcuts_/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">PRECISION & EXCELLENCE</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Presidential Cuts, Rancho Mirage's premier destination for exceptional men's grooming. We specialize in delivering precision fades, classic cuts, and professional beard styling with a commitment to excellence that matches our name.</p>
+                    <p>Our skilled barbers combine traditional techniques with modern styles to create the perfect look for every client. Whether you're seeking a sharp business cut, a trendy fade, or a complete grooming experience, we deliver presidential-level service.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Expert Precision Fades & Tapers</li>
+                        <li><i class="fas fa-check"></i> Professional Beard Styling</li>
+                        <li><i class="fas fa-check"></i> Kid-Friendly Environment</li>
+                        <li><i class="fas fa-check"></i> Hot Towel Treatments</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="fades.png" alt="Presidential Cuts Styles" class="fade-showcase">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">SERVICES & PRICING</h2>
+            <div class="services-content">
+                <div class="price-list">
+                    <div class="price-item">
+                        <span class="service-name">Adults and Kids Haircuts</span>
+                        <span class="service-price">$40</span>
+                    </div>
+                    <div class="price-item special">
+                        <span class="service-name">Senior/Veterans Day <small>(Monday & Wednesday Only)</small></span>
+                        <span class="service-price">$30</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="service-name">Haircut & Shave</span>
+                        <span class="service-price">$55</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="service-name">Full Service Beard Shave & Facial</span>
+                        <span class="service-price">$55</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="service-name">Earwax Removal</span>
+                        <span class="service-price">$10</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="service-name">Black Mask</span>
+                        <span class="service-price">$15</span>
+                    </div>
+                    <div class="price-item featured">
+                        <span class="service-name">Presidential Full Service Treatment <small>(Haircut, Black Mask, Beard & Facial)</small></span>
+                        <span class="service-price">$75</span>
+                    </div>
+                </div>
+                <div class="price-image">
+                    <img src="prices.png" alt="Presidential Cuts Price List">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">BOOK YOUR APPOINTMENT</h2>
+            <p class="booking-subtitle">Schedule online with Setmore or view our available hours below</p>
+
+            <!-- Setmore Direct Booking Button -->
+            <div class="setmore-cta">
+                <a href="https://nachotheebarber.setmore.com" target="_blank" class="setmore-button">
+                    <i class="fas fa-calendar-check"></i> Book Now on Setmore
+                </a>
+                <p class="setmore-note">Instant confirmation • Easy rescheduling • No phone calls needed</p>
+            </div>
+
+            <div class="booking-divider">
+                <span>OR VIEW AVAILABLE HOURS</span>
+            </div>
+
+            <div class="booking-container">
+                <div class="calendar-section">
+                    <div class="calendar-header">
+                        <button class="calendar-nav" id="prevMonth">&lt;</button>
+                        <h3 id="currentMonth">October 2025</h3>
+                        <button class="calendar-nav" id="nextMonth">&gt;</button>
+                    </div>
+                    <div class="calendar-grid" id="calendarGrid">
+                        <!-- Calendar will be generated by JavaScript -->
+                    </div>
+                </div>
+                <div class="time-section">
+                    <h3>Available Times</h3>
+                    <p class="selected-date">Select a date to view available times</p>
+                    <div class="time-slots" id="timeSlots">
+                        <!-- Time slots will be generated by JavaScript -->
+                    </div>
+                    <a href="https://nachotheebarber.setmore.com" target="_blank" class="confirm-button" id="confirmBooking">
+                        <i class="fas fa-calendar-check"></i> Book This Time on Setmore
+                    </a>
+                    <p class="alt-booking">Or call: <a href="tel:7608088113">(760) 808-8113</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">VISIT US</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>36101 Bob Hope Dr STE E6<br>Rancho Mirage, CA 92270</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:7608088113">(760) 808-8113</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>
+                                Monday: 7 AM – 4 PM<br>
+                                Tuesday - Saturday: 7 AM – 4 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h3>Amenities</h3>
+                            <p>Good for kids • Restroom available</p>
+                        </div>
+                    </div>
+                    <div class="social-contact">
+                        <a href="https://www.facebook.com/p/Presidential-Cuts-61556301353853/" target="_blank" class="social-btn">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/presidentialcuts_/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.8!2d-116.4!3d33.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db1d5d1d5d5d5d%3A0x1d5d5d5d5d5d5d5d!2s36101%20Bob%20Hope%20Dr%20STE%20E6%2C%20Rancho%20Mirage%2C%20CA%2092270!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Presidential Cuts. All rights reserved.</p>
+            <p>36101 Bob Hope Dr STE E6, Rancho Mirage, CA 92270 | (760) 808-8113</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
