@@ -79,10 +79,14 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 500px;
 }
 
 .map-container iframe {
   display: block;
+  height: 100%;
+  min-height: 500px;
 }
 
 @media (max-width: 768px) {
