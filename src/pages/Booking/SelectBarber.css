@@ -1,0 +1,96 @@
+.booking-page {
+  padding: 4rem 0;
+  min-height: calc(100vh - 200px);
+  background: #f9f9f9;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+  color: #666;
+}
+
+.no-barbers {
+  text-align: center;
+  padding: 3rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.barbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.barber-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.barber-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.barber-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.barber-info {
+  padding: 2rem;
+}
+
+.barber-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.barber-bio {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  min-height: 60px;
+}
+
+.select-button {
+  width: 100%;
+  background: #c9a961;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select-button:hover {
+  background: #d4b76f;
+  transform: translateY(-2px);
+}

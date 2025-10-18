@@ -1,0 +1,73 @@
+.services {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.price-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border-left: 4px solid #c9a961;
+  transition: all 0.3s;
+}
+
+.price-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.price-item.special {
+  background: #fff3e0;
+  border-left-color: #ff9800;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.service-name small {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #666;
+  font-style: italic;
+}
+
+.service-duration {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.service-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c9a961;
+}
+
+@media (max-width: 768px) {
+  .price-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .service-price {
+    align-self: flex-end;
+  }
+}

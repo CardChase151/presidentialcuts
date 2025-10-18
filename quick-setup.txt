@@ -1,0 +1,13 @@
+═══════════════════════════════════════════════════════════════
+PRESIDENTIAL CUTS - QUICK DATABASE SETUP
+═══════════════════════════════════════════════════════════════
+
+Just copy the COMPLETE_SETUP.sql file and paste it here:
+👉 https://supabase.com/dashboard/project/zffpfdxzhmwiywddwfmu/sql/new
+
+Then click RUN and you're done! ✅
+
+The file is located at:
+/Users/chasekellis/Apps/presidentialcuts/COMPLETE_SETUP.sql
+
+═══════════════════════════════════════════════════════════════

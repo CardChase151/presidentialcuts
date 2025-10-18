@@ -1,0 +1,168 @@
+.confirmation-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.booking-summary {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.booking-summary h2,
+.user-info h2,
+.guest-checkout h2 {
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #c9a961;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #c9a961;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-item .value {
+  color: #1a1a1a;
+  text-align: right;
+}
+
+.user-info,
+.guest-checkout {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.user-info p {
+  padding: 0.75rem 0;
+  color: #333;
+}
+
+.login-option {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #c9a961;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+.link-button:hover {
+  color: #d4b76f;
+}
+
+.guest-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #c9a961;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.confirmation-actions .back-button,
+.confirmation-actions .confirm-button {
+  flex: 1;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.confirmation-actions .back-button {
+  background: #f0f0f0;
+  border: 2px solid #e0e0e0;
+  color: #1a1a1a;
+}
+
+.confirmation-actions .back-button:hover {
+  background: #e0e0e0;
+}
+
+.confirmation-actions .confirm-button {
+  background: #c9a961;
+  border: none;
+  color: #1a1a1a;
+}
+
+.confirmation-actions .confirm-button:hover:not(:disabled) {
+  background: #d4b76f;
+  transform: translateY(-2px);
+}
+
+.confirmation-actions .confirm-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

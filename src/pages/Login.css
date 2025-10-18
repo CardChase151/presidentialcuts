@@ -1,0 +1,180 @@
+.login-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  transition: background 0.3s;
+}
+
+.login-page.barber-mode {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.login-container {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.login-container.barber-mode {
+  background: #2d2d2d;
+  border: 2px solid #c9a961;
+  box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.login-container.barber-mode h1 {
+  color: #c9a961;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.login-container.barber-mode .tabs {
+  border-bottom-color: #444;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.login-container.barber-mode .tabs button {
+  color: #999;
+}
+
+.tabs button.active {
+  color: #c9a961;
+  border-bottom-color: #c9a961;
+}
+
+.login-container.barber-mode .tabs button.active {
+  color: #c9a961;
+  background: rgba(201, 169, 97, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+.login-container.barber-mode .form-group label {
+  color: #c9a961;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.login-container.barber-mode .form-group input {
+  background: #1a1a1a;
+  border-color: #444;
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #c9a961;
+}
+
+.login-container.barber-mode .form-group input:focus {
+  background: #222;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.submit-button {
+  background: #c9a961;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #d4b76f;
+  transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.toggle-form {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.login-container.barber-mode .toggle-form {
+  color: #999;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #c9a961;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+.toggle-button:hover {
+  color: #d4b76f;
+}
