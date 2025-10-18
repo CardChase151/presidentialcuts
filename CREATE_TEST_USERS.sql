@@ -1,12 +1,12 @@
 -- Create Test Users for Presidential Cuts
 -- Password for all accounts: password123
--- Bcrypt hash: $2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy
+-- Bcrypt hash: $2b$10$bAEgoZgMECqF/nH.05oH2.2Z6Ov5e8myeFKucCqWkpW/9fRDK8O72
 
 -- 1. Create Owner Account
 INSERT INTO users (email, password_hash, name, phone, is_barber, is_owner)
 VALUES (
   'owner@presidentialcuts.com',
-  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+  '$2b$10$bAEgoZgMECqF/nH.05oH2.2Z6Ov5e8myeFKucCqWkpW/9fRDK8O72',
   'Shop Owner',
   '7608088113',
   false,
@@ -17,7 +17,7 @@ VALUES (
 INSERT INTO users (email, password_hash, name, phone, is_barber, is_owner)
 VALUES (
   'nacho@presidentialcuts.com',
-  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+  '$2b$10$bAEgoZgMECqF/nH.05oH2.2Z6Ov5e8myeFKucCqWkpW/9fRDK8O72',
   'Nacho The Barber',
   '7608088114',
   true,
@@ -62,7 +62,7 @@ END $$;
 INSERT INTO users (email, password_hash, name, phone, is_barber, is_owner)
 VALUES (
   'customer@test.com',
-  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+  '$2b$10$bAEgoZgMECqF/nH.05oH2.2Z6Ov5e8myeFKucCqWkpW/9fRDK8O72',
   'John Customer',
   '7601234567',
   false,
@@ -73,7 +73,7 @@ VALUES (
 INSERT INTO users (email, password_hash, name, phone, is_barber, is_owner)
 VALUES (
   'jane@test.com',
-  '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+  '$2b$10$bAEgoZgMECqF/nH.05oH2.2Z6Ov5e8myeFKucCqWkpW/9fRDK8O72',
   'Jane Doe',
   '7609876543',
   false,
