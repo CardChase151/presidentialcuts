@@ -128,6 +128,7 @@ function SelectDateTime() {
 
     while (currentTime < end) {
       const timeString = format(currentTime, 'HH:mm:ss');
+      // eslint-disable-next-line no-loop-func
       const isBooked = existingAppointments.some(apt => {
         const aptTime = parse(apt.appointment_time, 'HH:mm:ss', new Date());
         const aptDuration = apt.services?.duration_minutes || 30;
